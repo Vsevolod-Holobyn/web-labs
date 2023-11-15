@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивний контент</title><style>
+
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+.col-lg-4,
+.col-md-6,
+.col-sms-12 {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    margin: 20px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(146, 146, 157);
+}
+
+.cap-1,
+.cap-2,
+.cap-3{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 4px;
+}
+
+.cap-1{
+    background-color: darkgreen;
+    color: white;
+}
+
+.cap-2{
+    background-color: darkred;
+    color: white;
+}
+
+.cap-3{
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+.heading{
+    text-align: center;    
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* Large devices */
+@media (min-width: 992px) {
+.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, 
+.col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+ float: left;
+ border: 2px solid black;
+ }
+ .col-lg-1 {
+ width: calc(.33% - 40px);
+ }
+ .col-lg-2 {
+ width: calc(16.66% - 40px);
+ }
+ .col-lg-3 {
+ width: calc(25% - 40px);
+ }
+ .col-lg-4 {
+ width: calc(33.33% - 40px);
+ }
+ .col-lg-5 {
+ width: calc(41.66% - 40px);
+ }
+ .col-lg-6 {
+ width: calc(50%  - 40px);
+ }
+ .col-lg-7 {
+ width: calc(.33% - 40px);
+ }
+ .col-lg-8 {
+ width: calc(66.66% - 40px);
+ }
+ .col-lg-9 {
+ width: calc(75% - 40px);
+ }
+ .col-lg-10 {
+ width: calc(83.33 - 40px);
+ }
+ .col-lg-11 {
+ width: calc(91.66% - 40px);
+ }
+ .col-lg-12 {
+ width: calc(100% - 40px);
+ }
+}
+
+/* Medium devices */
+@media (min-width: 769px) and (max-width: 993px) {
+ .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, 
+.col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+ float: left;
+ border: 2px solid black;
+ }
+ .col-md-1 {
+ width: calc(8.33% - 40px);
+ }
+ .col-md-2 {
+ width: calc(16.66% - 40px);
+ }
+ .col-md-3 {
+ width: calc(25% - 40px);
+ }
+ .col-md-4 {
+ width: calc(33.33% - 40px);
+ }
+ .col-md-5 {
+ width: calc(41.66% - 40px);
+ }
+ .col-md-6 {
+ width: calc(50% - 40px);
+ }
+ .col-md-7 {
+ width: calc(58.33% - 40px);
+ }
+ .col-md-8 {
+ width: calc(66.66% - 40px);
+ }
+ .col-md-9 {
+ width: calc(75% - 40px);
+ }
+ .col-md-10 {
+ width: calc(83.33% - 40px);
+ }
+ .col-md-11 {
+ width: calc(91.66% - 40px);
+ }
+ .col-md-12 {
+ width: calc(100% - 40px);
+ }
+}
+
+/* Small devices */
+@media (max-width: 768px) {
+ .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, 
+.col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+ float: left;
+ border: 2px solid black;
+ }
+ .col-sm-1 {
+ width: calc(8.33% - 40px);
+ }
+ .col-sm-2 {
+ width: calc(16.66% - 40px);
+ }
+ .col-sm-3 {
+ width: calc(25% - 40px);
+ }
+ .col-sm-4 {
+ width: calc(33.33% - 40px);
+ }
+ .col-sm-5 {
+ width: calc(41.66% - 40px);
+ }
+ .col-sm-6 {
+ width: calc(50% - 40px);
+ }
+ .col-sm-7 {
+ width: calc(58.33% - 40px);
+ }
+ .col-sm-8 {
+ width: calc(66.66% - 40px);
+ }
+ .col-sm-9 {
+ width: calc(75% - 40px);
+ }
+ .col-sm-10 {
+ width: calc(83.33% - 40px);
+ }
+ .col-sm-11 {
+ width: calc(91.66% - 40px);
+ }
+ .col-sm-12 {
+ width: calc(100% - 40px);
+ }
+}
+</style>
+</head>
+<body>
+<h1 class="heading">Україна</h1>
+<div class="row">
+ <div class="col-lg-4 col-md-6 col-sm-12" ><h3 class="cap-1">Caption 1</h3><p>Україна - це країна з великою культурною спадщиною та різноманітними ландшафтами, що розташована у центрі Європи. Її багата історія, від Київської Русі до сучасності, створила унікальну суміш традицій та сучасності.</p></div>
+ <div class="col-lg-4 col-md-6 col-sm-12"><h3 class="cap-2">Caption 2</h3><p>Україна відома своїми видатними особистостями у різних сферах життя - від літератури до науки, від спорту до мистецтва. Її талановиті люди, які здобули визнання світової громадськості, пишаються своїм походженням.</p></div>
+ <div class="col-lg-4 col-md-12 col-sm-12"><h3 class="cap-3">Caption 3</h3><p>Україна - це країна, яка проявила велику вольову силу та стійкість у складних часах. Її боротьба за незалежність та пошук шляхів до розвитку стала важливим прикладом для багатьох інших країн у світі.</p></div>
+</div>
+</body>
+</html>

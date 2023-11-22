@@ -1,0 +1,53 @@
+.first{
+  font-size: 130%;
+}
+.inf{
+  font-size: 120%;
+}
+
+@media (max-width: 993px) {
+.first{
+  font-size: 120%;
+}
+.inf{
+  font-size: 110%;
+}
+}
+
+@media (max-width: 768px) {
+.first{
+  font-size: 110%;
+}
+}
+
+
+table, th, td {
+border: 1px solid black;
+}
+.inf-odd{
+background-color: gray;
+}
+
+.title-friends{
+text-align: center;
+font-size: 22px;
+}
+
+.back-main{
+font-style: italic;
+}
+
+.sub-title{
+text-align: center;      
+}
+
+.first{
+background-color: green;
+text-align: center;      
+font-weight: bold;
+color: white;
+}
+
+.last{
+text-align: right;      
+}
